@@ -1,0 +1,34 @@
+[versions]
+agp = "8.2.0"
+android-compileSdk = "34"
+android-minSdk = "24"
+android-targetSdk = "34"
+androidx-activityCompose = "1.8.2"
+compose = "1.6.2"
+compose-plugin = "1.6.0"
+kotlin = "1.9.22"
+voyager = "1.0.0"
+koin = "3.5.3"
+realm = "1.13.0"
+coroutines = "1.8.0"
+stately = "2.0.5"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+navigator-screen-model = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
+navigator-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
+navigator-koin = { module = "cafe.adriel.voyager:voyager-koin", version.ref = "voyager" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+mongodb-realm = { module = "io.realm.kotlin:library-base", version.ref = "realm" }
+kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+stately-common = { module = "co.touchlab:stately-common", version.ref = "stately" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+realm-plugin = { id = "io.realm.kotlin", version.ref = "realm" }
